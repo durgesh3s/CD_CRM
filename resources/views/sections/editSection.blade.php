@@ -207,8 +207,9 @@
                         </div>
 
                         <!-- Section Upload Input -->
-                        <div class="col-md-6">
-                            <div class="draggable" id="section-draggable" data-type="section" style="cursor:copy;">Section</div>
+                        <div>
+                            <div class="draggable d-flex align-item-center justify-content-center" id="section-draggable" data-type="section" style="cursor:copy;">
+                                <i class="fas fa-plus-circle me-2"></i>New Section</div>
                         </div>
 
 
@@ -343,383 +344,128 @@
                     </div>
 
                 </div>
-                    <div class="form-builder mb-4 p-4">
-                        <h5 class="fw-semibold">Contact Information</h5>
-                        <div class="d-grid gap-3">
-                            <div class="row gx-10 g-4">
-                                <!-- Mailing Street -->
-                                <div class="col-md-6">
-                                    <div class="form-floating form-floating-outline">
-                                        <input type="text" name="mailing-street" id="mailing-street"
-                                            class="form-control phone-mask" placeholder="" />
-                                        <label for="mailing-street">Mailing Street</label>
-                                    </div>
-                                </div>
-
-                                <!-- Other Street -->
-                                <div class="col-md-6">
-                                    <div class="form-floating form-floating-outline">
-                                        <input type="text" name="other-street" id="other-street"
-                                            class="form-control phone-mask" placeholder="" />
-                                        <label for="other-street">Other Street</label>
-                                    </div>
-                                </div>
-
-                                <!-- Mailing City -->
-                                <div class="col-md-6">
-                                    <div class="form-floating form-floating-outline">
-                                        <input type="text" name="mailing-city" id="mailing-city"
-                                            class="form-control phone-mask" placeholder="" />
-                                        <label for="mailing-city">Mailing City</label>
-                                    </div>
-                                </div>
-
-                                <!-- Other City -->
-                                <div class="col-md-6">
-                                    <div class="form-floating form-floating-outline">
-                                        <input type="text" name="other-city" id="other-city"
-                                            class="form-control phone-mask" placeholder="" />
-                                        <label for="other-city">Other City</label>
-                                    </div>
-                                </div>
-
-                                <!-- Mailing State -->
-                                <div class="col-md-6">
-                                    <div class="form-floating form-floating-outline">
-                                        <input type="text" name="mailing-state" id="mailing-state"
-                                            class="form-control phone-mask" placeholder="" />
-                                        <label for="mailing-state">Mailing State</label>
-                                    </div>
-                                </div>
-
-                                <!-- Other State -->
-                                <div class="col-md-6">
-                                    <div class="form-floating form-floating-outline">
-                                        <input type="text" name="other-state" id="other-state"
-                                            class="form-control phone-mask" placeholder="" />
-                                        <label for="other-state">Other State</label>
-                                    </div>
-                                </div>
-
-                                <!-- Mailing Zip -->
-                                <div class="col-md-6">
-                                    <div class="form-floating form-floating-outline">
-                                        <input type="text" name="mailing-zip" id="mailing-zip"
-                                            class="form-control phone-mask" placeholder="" />
-                                        <label for="mailing-zip">Mailing Zip</label>
-                                    </div>
-                                </div>
-
-                                <!-- Other Zip -->
-                                <div class="col-md-6 mb-3">
-                                    <div class="form-floating form-floating-outline">
-                                        <input type="text" name="other-zip" id="other-zip"
-                                            class="form-control phone-mask" placeholder="" />
-                                        <label for="other-zip">Other Zip</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="form-builder mb-4 p-4">
-                        <h5 class="fw-semibold">Description Information</h5>
-                        <div class="d-grid gap-3">
-                            <!-- Description -->
-                            <div class="col-12">
+                <div class="form-builder mb-4 p-4">
+                    <h5 class="fw-semibold">Contact Information</h5>
+                    <div class="d-grid gap-3">
+                        <div class="row gx-10 g-4">
+                            <!-- Mailing Street -->
+                            <div class="col-md-6">
                                 <div class="form-floating form-floating-outline">
-                                    <textarea name="description" class="form-control" id="description" rows="2"
-                                        placeholder="" style="height: 65px;"></textarea>
-                                    <label for="description">Description</label>
+                                    <input type="text" name="mailing-street" id="mailing-street"
+                                        class="form-control phone-mask" placeholder="" />
+                                    <label for="mailing-street">Mailing Street</label>
                                 </div>
                             </div>
 
-                            <!-- Long Integer 1 -->
-                            <div class="col-12 mb-3">
+                            <!-- Other Street -->
+                            <div class="col-md-6">
                                 <div class="form-floating form-floating-outline">
-                                    <input type="text" name="long-int1" class="form-control" id="long-int1"
-                                        placeholder="" style="height: 40px;"></input>
-                                    <label for="long-int1">Long Integer 1</label>
+                                    <input type="text" name="other-street" id="other-street"
+                                        class="form-control phone-mask" placeholder="" />
+                                    <label for="other-street">Other Street</label>
+                                </div>
+                            </div>
+
+                            <!-- Mailing City -->
+                            <div class="col-md-6">
+                                <div class="form-floating form-floating-outline">
+                                    <input type="text" name="mailing-city" id="mailing-city"
+                                        class="form-control phone-mask" placeholder="" />
+                                    <label for="mailing-city">Mailing City</label>
+                                </div>
+                            </div>
+
+                            <!-- Other City -->
+                            <div class="col-md-6">
+                                <div class="form-floating form-floating-outline">
+                                    <input type="text" name="other-city" id="other-city" class="form-control phone-mask"
+                                        placeholder="" />
+                                    <label for="other-city">Other City</label>
+                                </div>
+                            </div>
+
+                            <!-- Mailing State -->
+                            <div class="col-md-6">
+                                <div class="form-floating form-floating-outline">
+                                    <input type="text" name="mailing-state" id="mailing-state"
+                                        class="form-control phone-mask" placeholder="" />
+                                    <label for="mailing-state">Mailing State</label>
+                                </div>
+                            </div>
+
+                            <!-- Other State -->
+                            <div class="col-md-6">
+                                <div class="form-floating form-floating-outline">
+                                    <input type="text" name="other-state" id="other-state"
+                                        class="form-control phone-mask" placeholder="" />
+                                    <label for="other-state">Other State</label>
+                                </div>
+                            </div>
+
+                            <!-- Mailing Zip -->
+                            <div class="col-md-6">
+                                <div class="form-floating form-floating-outline">
+                                    <input type="text" name="mailing-zip" id="mailing-zip"
+                                        class="form-control phone-mask" placeholder="" />
+                                    <label for="mailing-zip">Mailing Zip</label>
+                                </div>
+                            </div>
+
+                            <!-- Other Zip -->
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating form-floating-outline">
+                                    <input type="text" name="other-zip" id="other-zip" class="form-control phone-mask"
+                                        placeholder="" />
+                                    <label for="other-zip">Other Zip</label>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="form-builder mb-4 p-4">
-                        <h5 class="fw-semibold">Description Information</h5>
-                        <div class="d-grid gap-3">
+                </div>
+
+                <div class="form-builder mb-4 p-4">
+                    <h5 class="fw-semibold">Description Information</h5>
+                    <div class="d-grid gap-3">
+                        <!-- Description -->
+                        <div class="col-12">
+                            <div class="form-floating form-floating-outline">
+                                <textarea name="description" class="form-control" id="description" rows="2"
+                                    placeholder="" style="height: 65px;"></textarea>
+                                <label for="description">Description</label>
+                            </div>
+                        </div>
+
+                        <!-- Long Integer 1 -->
+                        <div class="col-12 mb-3">
+                            <div class="form-floating form-floating-outline">
+                                <input type="text" name="long-int1" class="form-control" id="long-int1" placeholder=""
+                                    style="height: 40px;"></input>
+                                <label for="long-int1">Long Integer 1</label>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="form-builder mb-4 p-4">
+                    <h5 class="fw-semibold">Description Information</h5>
+                    <div class="d-grid gap-3">
+                    </div>
+                </div>
 
 
             </div>
         </section>
     </div>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- jQuery UI -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- jQuery UI -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Make the draggable elements
-            $('.draggable').draggable({
-                helper: 'clone'
-            });
-
-            // Make the form builder area droppable
-            $('.form-builder').droppable({
-                accept: '.draggable',
-                drop: function (event, ui) {
-                    var fieldType = ui.helper.data('type');
-                    // console.log('drop', fieldType)
-                    var fieldHtml = '';
-
-                    // Determine the HTML to add based on the field type
-                    switch (fieldType) {
-                        case 'single-line':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Single Line: </label>' +
-                                '<input type="text" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'multi-line':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Multi Line: </label>' +
-                                '<textarea name="text[]" class="form-control" rows="2" style="height: 65px;"></textarea>' +
-                                '</div>';
-                            break;
-                        case 'email':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Email: </label>' +
-                                '<input type="email" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'number':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Number: </label>' +
-                                '<input type="number" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'pick-list':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Pick List: </label>' +
-                                '<select name="text[]" class="form-control">' +
-                                '<option value="Option 1">Option 1</option>' +
-                                '<option value="Option 2">Option 2</option>' +
-                                '</select>' +
-                                '</div>';
-                            break;
-                        case 'multi-select':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Multi-Select: </label>' +
-                                '<select name="text[]" class="form-control" multiple>' +
-                                '<option value="Option 1">Option 1</option>' +
-                                '<option value="Option 2">Option 2</option>' +
-                                '</select>' +
-                                '</div>';
-                            break;
-                        case 'date':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Date: </label>' +
-                                '<input type="date" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'datetime':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Date/Time: </label>' +
-                                '<input type="datetime-local" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'auto-number':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Auto-Number: </label>' +
-                                '<input type="text" name="text[]" class="form-control" readonly>' +
-                                '</div>';
-                            break;
-                        case 'currency':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Currency: </label>' +
-                                '<input type="text" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'decimal':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Decimal: </label>' +
-                                '<input type="number" step="0.01" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'percentage':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Percentage: </label>' +
-                                '<input type="number" step="0.01" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'long-integer':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Long Integer: </label>' +
-                                '<input type="number" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'checkbox':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Check Box: </label>' +
-                                '<input type="checkbox" name="text[]" class="form-check-input">' +
-                                '</div>';
-                            break;
-                        case 'url':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">URL: </label>' +
-                                '<input type="url" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'lookup':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Lookup: </label>' +
-                                '<input type="text" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'formula':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">Formula: </label>' +
-                                '<input type="text" name="text[]" class="form-control" readonly>' +
-                                '</div>';
-                            break;
-                        case 'user':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">User: </label>' +
-                                '<input type="text" name="text[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        case 'file-upload':
-                            fieldHtml = '<div class="dropped-field mb-3">' +
-                                '<label class="form-label editable-label">File Upload: </label>' +
-                                '<input type="file" name="file[]" class="form-control">' +
-                                '</div>';
-                            break;
-                        default:
-                            fieldHtml = '';
-                    }
 
 
-                    var $fieldElement = $(fieldHtml);
-
-                    // Append the field to the form builder area
-                    $(this).append($fieldElement);
-
-                    // Allow editing the label once after dropping
-                    $fieldElement.find('.editable-label').one('click', function () {
-                        var $label = $(this);
-                        var currentText = $label.text();
-                        var $input = $('<input type="text" class=" label-edit-input" value="' + currentText + '" />');
-
-                        // Replace label with input for editing
-                        $label.replaceWith($input);
-
-                        // Handle focus out or enter key to finalize the edit
-                        $input.focus().on('blur keyup', function (e) {
-                            if (e.type === 'blur' || (e.type === 'keyup' && e.key === 'Enter')) {
-                                var newText = $input.val() || 'Single Line: ';
-                                $input.replaceWith('<label class="form-label">' + newText + '</label>');
-                            }
-                        });
-                    });
-                }
-            });
-        });
-    </script>
-
-    <script>
-        // $(document).ready(function () {
-        //     // Make the draggable elements
-        //     $('#section-draggable').draggable({
-        //         helper: 'clone'
-        //     });
-
-        //     // Make the form builder area droppable
-        //     $('#parent-section').droppable({
-        //         accept: '#section-draggable',
-        //         drop: function (event, ui) {
-        //             var sectionType = ui.helper.data('type');
-        //             console.log("Section Type:", sectionType);
-        //             var fieldHtml = '';
-
-
-        //             switch (sectionType) {
-        //                 case 'section':
-        //                     fieldHtml = '<div class="form-builder mb-4 p-4">' +
-        //                         '<h5 class="fw-semibold">Description Information</h5>' +
-        //                         '<div class="d-grid gap-3"></div>' +
-        //                         '</div>';
-        //                     break;
-        //             }
-
-
-        //             var $fieldElement = $(fieldHtml);
-
-        //             // Append the field to the form builder area
-        //             $(this).append($fieldElement);
-        //         }
-        //     });
-        // });
-    </script>
-
-    <script>
-        $(document).ready(function () {
-    // Handle click on the draggable element
-    $('#section-draggable').on('click', function () {
-        // Retrieve the section type from the data-type attribute
-        var sectionType = $(this).data('type');
-        console.log("Section Type:", sectionType);  // Debugging output
-
-        var fieldHtml = '';
-
-        // Determine the HTML to add based on the section type
-        switch (sectionType) {
-            case 'section':
-                fieldHtml = '<div class="form-builder mb-4 p-4">' +
-                            '<h5 class="fw-semibold">Description Information</h5>' +
-                            '<div class="d-grid gap-3"></div>' +
-                            '</div>';
-                break;
-            default:
-                console.log("No matching section type found");  // If no case matches
-        }
-
-        if (fieldHtml !== '') {
-            var $fieldElement = $(fieldHtml);
-            console.log("Generated Field Element:", $fieldElement);  // Debugging output
-
-            // Append the field to the form builder area (droppable area)
-            $('#parent-section').append($fieldElement);
-            console.log("Element appended successfully");
-        } else {
-            console.log("No HTML generated for this section type.");
-        }
-    });
-});
-
-    </script>
+  
 
 
 
 
-    <!-- JavaScript to handle back navigation -->
-    <script>
-        function goBack() {
-            // Pop the current page from the stack and navigate to the previous page
-            history.back();
-        }
-    </script>
+
+    
 
     @endsection

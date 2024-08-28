@@ -71,6 +71,24 @@
   <script src="{{asset('assets/js/main.js')}}"></script>
   <script src="{{asset('/js/module.js')}}"></script>
   <script src="{{asset('/js/alert.js')}}"></script>
+  <script src="{{asset('/js/section.js')}}"></script>
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!-- JavaScript to handle back navigation -->
+  <script>
+    function goBack() {
+      history.back();
+    }
+  </script>
 
   @yield('content')
 
