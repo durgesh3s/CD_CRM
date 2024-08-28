@@ -68,102 +68,142 @@
 
                         <!-- Single Line Text Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="single-line">Single Line</div>
+                            <div class="draggable" data-type="single-line">
+                                <i class="fas fa-pencil-alt"></i> Single Line
+                            </div>
                         </div>
 
                         <!-- Multi Line Text Input (Textarea) -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="multi-line">Multi Line</div>
+                            <div class="draggable" data-type="multi-line">
+                                <i class="fas fa-align-left"></i> Multi Line
+                            </div>
                         </div>
 
                         <!-- Email Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="email">Email</div>
+                            <div class="draggable" data-type="email">
+                                <i class="fas fa-envelope"></i> Email
+                            </div>
                         </div>
 
                         <!-- Phone Number Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="phone">Phone</div>
+                            <div class="draggable" data-type="phone">
+                                <i class="fas fa-phone"></i> Phone
+                            </div>
                         </div>
 
                         <!-- Number Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="number">Number</div>
+                            <div class="draggable" data-type="number">
+                                <i class="fas fa-hashtag"></i> Number
+                            </div>
                         </div>
 
                         <!-- Pick List (Dropdown) -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="pick-list">Pick List</div>
+                            <div class="draggable" data-type="pick-list">
+                                <i class="fas fa-list"></i> Pick List
+                            </div>
                         </div>
 
                         <!-- Multi-Select Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="multi-select">Multi-Select</div>
+                            <div class="draggable" data-type="multi-select">
+                                <i class="fas fa-tasks"></i> Multi-Select
+                            </div>
                         </div>
 
                         <!-- Date Picker Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="date">Date</div>
+                            <div class="draggable" data-type="date">
+                                <i class="fas fa-calendar-alt"></i> Date
+                            </div>
                         </div>
 
                         <!-- Date/Time Picker Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="datetime">Date/Time</div>
+                            <div class="draggable" data-type="datetime">
+                                <i class="fas fa-clock"></i> Date/Time
+                            </div>
                         </div>
 
                         <!-- Auto-Number Input (Read-Only) -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="auto-number">Auto-Number</div>
+                            <div class="draggable" data-type="auto-number">
+                                <i class="fas fa-sort-numeric-down"></i> Auto-Number
+                            </div>
                         </div>
 
                         <!-- Currency Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="currency">Currency</div>
+                            <div class="draggable" data-type="currency">
+                                <i class="fas fa-dollar-sign"></i> Currency
+                            </div>
                         </div>
 
                         <!-- Decimal Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="decimal">Decimal</div>
+                            <div class="draggable" data-type="decimal">
+                                <i class="fas fa-percentage"></i> Decimal
+                            </div>
                         </div>
 
                         <!-- Percentage Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="percentage">Percentage</div>
+                            <div class="draggable" data-type="percentage">
+                                <i class="fas fa-percent"></i> Percentage
+                            </div>
                         </div>
 
                         <!-- Long Integer Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="long-integer">Long Integer</div>
+                            <div class="draggable" data-type="long-integer">
+                                <i class="fas fa-calculator"></i> Long Integer
+                            </div>
                         </div>
 
                         <!-- Check Box -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="checkbox">Check Box</div>
+                            <div class="draggable" data-type="checkbox">
+                                <i class="fas fa-check-square"></i> Check Box
+                            </div>
                         </div>
 
                         <!-- URL Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="url">URL</div>
+                            <div class="draggable" data-type="url">
+                                <i class="fas fa-link"></i> URL
+                            </div>
                         </div>
 
                         <!-- Lookup Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="lookup">Lookup</div>
+                            <div class="draggable" data-type="lookup">
+                                <i class="fas fa-search"></i> Lookup
+                            </div>
                         </div>
 
                         <!-- Formula Field (Read-Only) -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="formula">Formula</div>
+                            <div class="draggable" data-type="formula">
+                                <i class="fas fa-calculator"></i> Formula
+                            </div>
                         </div>
 
                         <!-- User Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="user">User</div>
+                            <div class="draggable" data-type="user">
+                                <i class="fas fa-user"></i> User
+                            </div>
                         </div>
 
                         <!-- File Upload Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="file-upload">File Upload</div>
+                            <div class="draggable" data-type="file-upload">
+                                <i class="fas fa-upload"></i> File Upload
+                            </div>
                         </div>
 
                         <!-- Section Upload Input -->
