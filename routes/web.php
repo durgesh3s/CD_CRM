@@ -21,3 +21,5 @@ Route::get('/section', function () {
 Route::get('/edit-section', function () {
     return view('sections.editSection');
 })->name("");
+
+Route::get('/dynamic-form', [ModuleController::class, 'showDynamicForm'])->name('dynamic-form');

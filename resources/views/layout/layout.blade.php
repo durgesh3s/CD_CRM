@@ -53,6 +53,8 @@
 
 <body>
 
+  @yield('content')
+
   @routes
 
 
@@ -76,10 +78,10 @@
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- jQuery UI -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery UI -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -90,7 +92,6 @@
     }
   </script>
 
-  @yield('content')
 
 </body>
 

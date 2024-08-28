@@ -9,14 +9,13 @@
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
                 <!-- Page Title -->
-                <a href="javascript:void(0);" onclick="goBack()" class="navbar-brand text-black fw-bold fs-4">←
-                    Contacts</a>
+                <a href="javascript:void(0);" onclick="goBack()" class="navbar-brand text-black fw-bold fs-4">← Contacts</a>
             </div>
             <!-- Action Buttons -->
             <form class="d-flex gap-2 my-3" action="javascript:void(0)">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Cancel</button>
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Save and New</button>
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Save</button>
+                <button id="btnCancel" class="btn btn-outline-primary my-2 my-sm-0" type="button">Cancel</button>
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="button">Save and New</button>
+                <button id="btnSave" class="btn btn-outline-primary my-2 my-sm-0" type="button">Save</button> <!-- Modified Save Button -->
             </form>
         </div>
         <hr>
@@ -89,7 +88,7 @@
 
                         <!-- Phone Number Input -->
                         <div class="col-md-6">
-                            <div class="draggable" data-type="phone">
+                            <div class="draggable" data-type="number">
                                 <i class="fas fa-phone"></i> Phone
                             </div>
                         </div>
@@ -218,7 +217,7 @@
             </div> <!-- End of row -->
         </div>
 
-        <section class="parent-section col" id="parent-section">
+        <form class="parent-section col" id="parent-section">
             <div class="col">
                 <div class="form-builder mb-4 p-4">
                     <h5 class="fw-semibold">Contact Information</h5>
@@ -447,25 +446,42 @@
                     </div>
                 </div>
 
-                <div class="form-builder mb-4 p-4">
-                    <h5 class="fw-semibold">Description Information</h5>
-                    <div class="d-grid gap-3">
-                    </div>
-                </div>
-
 
             </div>
-        </section>
+        </form>
     </div>
 
 
-
-  
-
-
-
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Event listener for Save button
+            document.getElementById('btnSave').addEventListener('click', function () {
+                // Initialize an array to store form data
+                let formDataArray = [];
+    
+                // Select all form fields within the <form> element with the id 'parent-section'
+                const formFields = document.querySelectorAll('#parent-section input, #parent-section textarea, #parent-section select');
+    
+                // Loop through each form field
+                formFields.forEach(field => {
+                    // Find the corresponding label for the field
+                    const label = field.closest('.form-floating') ? field.closest('.form-floating').querySelector('label') : null;
+                    
+                    // Add an object with field type and label text to the array
+                    formDataArray.push({
+                        type: field.type,
+                        label: label ? label.innerText : 'No Label'
+                    });
+                });
+    
+                // Store the array in session storage
+                sessionStorage.setItem('formDataArray', JSON.stringify(formDataArray));
+    
+                // Redirect to a new page where the dynamic form will be generated
+                window.location.href = "{{ route('dynamic-form') }}"; // Update this route to your dynamic form route
+            });
+        });
+    </script>
 
     
-
     @endsection

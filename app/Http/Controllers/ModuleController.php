@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Validator;
 class ModuleController extends Controller
 {
 
+    public function showDynamicForm()
+    {
+        return view('dynamic-form');
+    }
     // Creating a new module
     public function createModule(Request $request)
     {

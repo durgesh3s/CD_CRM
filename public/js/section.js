@@ -13,7 +13,7 @@ $(document).ready(function () {
         }
 
         var $fieldElement = $(fieldHtml);
-        $('#parent-section').append($fieldElement);
+        $('#parent-form').append($fieldElement);
 
         // Reinitialize draggable and droppable after appending a new section
         initializeDraggable();
@@ -180,7 +180,7 @@ $(document).ready(function () {
 
     // Enable label editing
 
-    $('#parent-section').on('click', '.editable-heading', function () {
+    $('#parent-form').on('click', '.editable-heading', function () {
         var $heading = $(this);
         var currentText = $heading.text();
         // Replace heading with an input field to edit the text
