@@ -6,8 +6,8 @@ $(document).ready(function () {
         switch (sectionType) {
             case "section":
                 fieldHtml =
-                    '<div class="form-builder mb-4 p-4">' +
-                    '<h5 class="fw-semibold editable-heading">Description Information</h5>' +
+                    '<div class="form-builder mb-4 p-4 row">' +
+                    '<h5 class="fw-semibold editable-heading">New Section</h5>' +
                     '<div class="d-grid gap-3"></div>' +
                     "</div>";
                 break;
@@ -16,7 +16,7 @@ $(document).ready(function () {
         var $fieldElement = $(fieldHtml);
         $("#parent-form").append($fieldElement);
 
-        // Reinitialize draggable and droppable after appending a new section
+        // Reinitialize draggable and droppable after appending a neww sections
         initializeDraggable();
         initializeDroppable();
     });
@@ -95,31 +95,36 @@ $(document).ready(function () {
                     '</div>';
                 break;
         
-            case "pick-list":
-                fieldHtml =
-                    '<div class="col-md-6 dropped-field mb-3">' +
-                    '<label class="form-label editable-label" for="pick-list">' +
-                    (labelText || "Pick List") +
-                    '</label>' +
-                    '<select disabled id="pick-list" name="pick-list" class="form-control cursor-grab">' +
-                    '<option value="Option 1">Option 1</option>' +
-                    '<option value="Option 2">Option 2</option>' +
-                    '</select>' +
-                    '</div>';
-                break;
+                case "pick-list":
+                    fieldHtml =
+                        '<div class="col-md-6 dropped-field mb-3">' +
+                        '<label class="form-label editable-label" for="pick-list">' +
+                        (labelText || "Pick List") +
+                        '</label>' +
+                        '<div class="dynamic-options">' +
+                        '<select id="pick-list" name="pick-list" class="form-control cursor-grab">' +
+                        '<option value="Option 1">Add Options</option>' +
+                        '</select>' +
+                        '</div>' +
+                        '<button type="button" class="btn btn-primary mt-2 add-option">+</button>' + // Button to add more options
+                        '</div>';
+                    break;
         
-            case "multi-select":
-                fieldHtml =
-                    '<div class="col-md-6 dropped-field mb-3">' +
-                    '<label class="form-label editable-label" for="multi-select">' +
-                    (labelText || "Multi-Select") +
-                    '</label>' +
-                    '<select disabled id="multi-select" name="multi-select" class="form-control cursor-grab" multiple>' +
-                    '<option value="Option 1">Option 1</option>' +
-                    '<option value="Option 2">Option 2</option>' +
-                    '</select>' +
-                    '</div>';
-                break;
+                case "multi-select":
+                    fieldHtml =
+                        '<div class="col-md-6 dropped-field mb-3">' +
+                        '<label class="form-label editable-label" for="multi-select">' +
+                        (labelText || "Multi-Select") +
+                        '</label>' +
+                        '<div class="dynamic-options">' +
+                        '<select id="multi-select" name="multi-select" class="form-control cursor-grab" multiple>' +
+                        '<option value="Option 1">Add Option</option>' +
+                        '</select>' +
+                        '</div>' +
+                        '<button type="button" class="btn btn-primary mt-2 add-option">+</button>' + // Button to add more options
+                        '</div>';
+                    break;
+                
         
             case "date":
                 fieldHtml =
@@ -351,7 +356,29 @@ $(document).ready(function () {
 
         sessionStorage.setItem('formDataArray', JSON.stringify(formDataArray));
 
-        window.location.href = "/dynamic-form";
+        window.location.href = "/section";
     });
 });
+
+
+// <<<<<<<<<<<<<------------- Add More options ---------------->>>>>>>>>>>>>
+$(document).on('click', '.add-option', function () {
+    const selectElement = $(this).closest('.dropped-field').find('select');
+
+    // Show a popup/modal to enter a new option
+    const newOption = prompt("Enter the name of the new option:");
+
+    if (newOption) {
+        // Add the new option to the select element
+        selectElement.append(`<option value="${newOption}">${newOption}</option>`);
+    }
+});
+
+$(document).on('click', '.remove-selected-option', function () {
+    const selectElement = $(this).closest('.dropped-field').find('select');
+
+    // Remove the selected option from the select list
+    selectElement.find('option:selected').remove();
+});
+
 
