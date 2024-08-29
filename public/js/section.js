@@ -102,8 +102,7 @@ $(document).ready(function () {
                         (labelText || "Pick List") +
                         '</label>' +
                         '<div class="dynamic-options">' +
-                        '<select id="pick-list" name="pick-list" class="form-control cursor-grab">' +
-                        '<option value="Option 1">Add Options</option>' +
+                        '<select placeholder="Add Options" id="pick-list" name="pick-list" class="form-control cursor-grab">' +
                         '</select>' +
                         '</div>' +
                         '<button type="button" class="btn btn-primary mt-2 add-option">+</button>' + // Button to add more options

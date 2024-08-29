@@ -73,7 +73,7 @@
                     let input;
                     switch (fieldData.type) {
                         case 'text':
-                            input = document.createElement('input');
+                            input = document.createElem`ent('input');
                             input.setAttribute('type', 'text');
                             break;
                         case 'textarea':
